@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            android:id="@+id/comment_edittext" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:minLines="6"
+            android:textSize="24sp" android:layout_marginTop="32dp"/>
+    <TextView
+            android:text="Remaining 140"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/word_count" app:layout_constraintTop_toBottomOf="@+id/comment_edittext"
+            android:layout_marginTop="8dp" android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/submit_comment"/>
+    <Button
+            android:text="submit comment"
+            android:enabled="false"
+            tools:enabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/submit_comment"
+            app:layout_constraintTop_toBottomOf="@+id/comment_edittext" android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/error_comment" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:textColor="@color/error"
+            app:layout_constraintTop_toBottomOf="@+id/word_count" android:layout_marginTop="64dp"
+            android:textAlignment="center" android:visibility="gone" tools:visibility="visible"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/commenting" android:visibility="gone" tools:visibility="visible"
+            android:indeterminate="true"/>
+
+</android.support.constraint.ConstraintLayout>

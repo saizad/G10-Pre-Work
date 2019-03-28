@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pre-Work-G10</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="logout">logout</string>
+    <string name="image_hash">Image Hash</string>
+    <string name="search">Search</string>
+    <string name="image_url">https://imgur.com/a/</string>
+    <string name="stay_logged_in">Stay Logged in</string>
+    <string name="or">Or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="word_count">Remaining %d</string>
+</resources>

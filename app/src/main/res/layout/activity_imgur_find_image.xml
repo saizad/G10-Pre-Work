@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/image_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="80dp" android:textSize="24sp"
+            android:textColor="@color/colorPrimaryLight" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/image_hash"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginTop="8dp"
+            android:text="KVQZpPG"
+            android:hint="@string/image_hash" android:textSize="30sp" android:textAlignment="textStart"/>
+    <Button
+            android:text="@string/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/search_image" app:layout_constraintTop_toBottomOf="@+id/image_hash"
+            android:layout_marginTop="32dp"/>
+
+    <TextView
+            android:textAllCaps="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/error" app:layout_constraintTop_toBottomOf="@+id/search_image"
+            android:layout_marginTop="64dp"
+            tools:text="error"
+            android:textAlignment="center"
+            android:textColor="@color/error" android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/searching"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:indeterminate="true"/>
+
+</android.support.constraint.ConstraintLayout>
